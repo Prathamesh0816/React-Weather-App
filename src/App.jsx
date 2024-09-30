@@ -46,7 +46,7 @@ function App() {
       setWeatherData(data);
     } catch (error) {
       setWeatherData(null);
-      setStatusMessage("Unable to find weather data for the specified city. Please try again.");
+      setStatusMessage("Unable to find weather data for the specified city or wrong input entered. Please try again.");
     } finally {
       setLoading(false);
     }
