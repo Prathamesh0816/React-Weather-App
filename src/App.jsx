@@ -4,6 +4,8 @@ import './App.css'
 function App() {
   const [city, setCity] = useState("");
   const [weatherData, setWeatherData] = useState("");
+  //importing from .env file 
+  const key = import.meta.env.VITE_KEY;
   async function handleButtonClick() {
     const date = new Date();
     const year = date.getFullYear();
